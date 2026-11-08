@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>차철항덕 공식 홈페이지</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #071525;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 22px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #0c2035;
+      border-bottom: 1px solid #17415c;
+    }
+    header h2 { color: #55d9ff; margin: 0; }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 100px 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #102f4c, #071525);
+    }
+    .hero h1 { font-size: 42px; margin-bottom: 12px; }
+    .hero h1 span { color: #55d9ff; }
+    .hero p { color: #c0d5e5; line-height: 1.8; }
+    .button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 13px 25px;
+      background: #55d9ff;
+      color: #071525;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 55px 8%; }
+    .section-title { color: #55d9ff; font-size: 26px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: #10243a;
+      padding: 25px;
+      border: 1px solid #21445d;
+      border-radius: 14px;
+    }
+    .card h3 { color: #55d9ff; }
+    .card p { color: #c0d5e5; line-height: 1.6; }
+    footer {
+      text-align: center;
+      padding: 30px 15px;
+      background: #0c2035;
+      color: #9bb2c5;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+    @media(max-width:600px) {
+      header { flex-direction: column; gap: 15px; }
+      nav a { margin: 0 7px; }
+      .hero h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>차철항덕</h2>
+  <nav>
+    <a href="#about">소개</a>
+    <a href="#contents">콘텐츠</a>
+    <a href="#sns">SNS</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>CAR · TRAIN · <span>PLANE</span></h1>
+  <p>
+    차철항덕 / 시민_3351의 공식 홈페이지<br>
+    버스와 철도, 항공 그리고 사진을 담는 공간
+  </p>
+  <a href="#contents" class="button">둘러보기</a>
+</div>
+
+<section id="about">
+  <h2 class="section-title">ABOUT</h2>
+  <p>
+    안녕하세요! 차철항덕입니다.<br>
+    버스, 철도, 항공을 좋아하고 직접 촬영한 사진과
+    다양한 교통 콘텐츠를 제작합니다.
+  </p>
+</section>
+
+<section id="contents">
+  <h2 class="section-title">CONTENTS</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🚌 BUS</h3>
+      <p>부산·울산·경남의 버스 이야기와 영상</p>
+    </div>
+    <div class="card">
+      <h3>🚆 TRAIN</h3>
+      <p>철도와 열차에 관한 다양한 콘텐츠</p>
+    </div>
+    <div class="card">
+      <h3>✈️ PLANE</h3>
+      <p>항공기와 항공사 이야기</p>
+    </div>
+    <div class="card">
+      <h3>📸 GALLERY</h3>
+      <p>직접 촬영한 사진 갤러리</p>
+    </div>
+  </div>
+</section>
+
+<section id="sns">
+  <h2 class="section-title">MY SNS</h2>
+  <p>YouTube · Instagram</p>
+  <a class="button" href="https://www.youtube.com/" target="_blank">YouTube</a>
+  <a class="button" href="https://www.instagram.com/cimin_3351/" target="_blank">Instagram</a>
+</section>
+
+<footer>
+  © 2026 차철항덕 / 시민_3351<br>
+  개인 운영 비공식 홈페이지
+</footer>
+
+</body>
+</html>
